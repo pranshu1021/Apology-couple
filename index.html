@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .heart {
+            font-size: 100px;
+            color: red;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #ff3e30;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #4caf50;
+        }
+    </style>
+    <script>
+        function forgiveMe() {
+            const message = document.getElementById('forgive-message');
+            message.style.display = 'block';
+            message.innerText = 'Thank you for forgiving me! I love you! ❤️';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>I'm Sorry</h1>
+        <p>
+            I know I haven't been able to give you the time you deserve because of my exams.
+            But now, everything is about to change.
+        </p>
+        <p>
+            I promise to make it up to you with all the love and attention you deserve.
+            You mean the world to me, and I’ll show it every single day.
+        </p>
+        <button class="btn" onclick="forgiveMe()">Forgive Me?</button>
+        <div id="forgive-message" class="message"></div>
+        <footer>
+            Made with 💖 for <a href="#">You by YOUR BABY PRANSHU</a>
+        </footer>
+    </div>
+</body>
+</html>
